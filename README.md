@@ -5,7 +5,7 @@
 
 ---
 
-[Demo](https://oscarhernandez.vercel.app/)
+[Demo](https://ahmadridho.vercel.app/)
 
 [Astro Themes](https://astro.build/themes/details/dark-minimal/)
 
