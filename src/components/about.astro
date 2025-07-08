@@ -1,0 +1,52 @@
+---
+import LetterGlitch from "../React/LetterGlitch.tsx";
+import SkillsList from "../React/SkillsList.tsx";
+---
+
+<div class="max-w-5xl mx-auto mb-5 px-4 sm:px-6">
+  <!-- Header Section -->
+  <div class="flex items-center gap-3 mb-8 md:mb-10">
+    <h2 class="text-[var(--white)] text-3xl md:text-4xl font-semibold">About Me</h2>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="flex flex-col">
+    <!-- About Text -->
+    <div class="mb-12 md:mb-20">
+      <div class="bg-[#1414149c] border border-[var(--white-icon-tr)] rounded-xl p-6 md:p-8">
+        <div class="space-y-5 md:space-y-6 text-[var(--white-icon-tr)]">
+          <p class="text-[var(--white-icon)] text-base md:text-lg leading-relaxed">
+            I'm a 5th-semester Informatics student with a strong interest in fullstack web development. I specialize in crafting responsive and accessible user interfaces using React.js and Next.js, while also building scalable backend systems with Node.js and working toward proficiency in Laravel.
+          </p>
+          
+          <p class="text-[var(--white-icon)] text-base md:text-lg leading-relaxed">
+            Through both personal and collaborative projects, I've developed features such as RESTful APIs, user authentication, and real-time data interactions, applying best practices in modular design and clean code. I'm also experienced with tools like Firebase, MySQL, Git, and project management platforms like Trello and Jira.
+          </p>
+          
+          <p class="text-[var(--white-icon)] text-base md:text-lg leading-relaxed">
+            I'm a fast learner, detail-oriented, and thrive in both independent and team environments. I'm currently seeking internship opportunities where I can contribute to meaningful projects, sharpen my backend skills, and grow as a well-rounded fullstack developer.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Skills Section -->
+    <div class="flex flex-col lg:flex-row items-center gap-8 mb-12 md:mb-20">
+      <div class="w-full lg:flex-1">
+        <SkillsList client:load />
+      </div>
+      <div class="flex justify-center w-full lg:w-auto">
+        <div class="size-[290px] md:size-[320px] lg:size-[350px] flex items-center justify-center lg:ml-16">
+          <LetterGlitch
+            client:load
+            glitchColors={["#5e4491", "#A476FF", "#241a38"]}
+            glitchSpeed={33}
+            centerVignette={false}
+            outerVignette={true}
+            smooth={true}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
